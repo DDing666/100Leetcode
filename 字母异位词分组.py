@@ -12,11 +12,13 @@
 import collections
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 mp = collections.defaultdict(list)
+#这里直接创建dict()就可以其实
 
 for st in strs:
     
     key = "".join(sorted(st))
+    # print(st)
     mp[key].append(st)
-    print(st, mp, key, "".join(sorted(st)))
+    # print(st, mp, key, "".join(sorted(st)))
 
 print(list(mp.values())) 
